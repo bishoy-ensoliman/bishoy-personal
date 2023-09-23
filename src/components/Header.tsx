@@ -53,22 +53,22 @@ const Header = () => {
                                                 className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
                                                 <li><a className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                                                     href="/about">About</a></li>
-                                                <li><a className="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+                                                {/* <li><a className="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
                                                     href="/articles">Articles
                                                     <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0">
                                                     </span>
-                                                </a></li>
+                                                </a></li> 
                                                 <li><a className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                                                     href="/projects">Projects</a></li>
-                                                <li><a className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                                                  <li><a className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                                                     href="/cse">CSE</a></li>
                                                 <li><a className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                                                    href="/ase">ASE</a></li>
+                                                    href="/ase">ASE</a></li> */}
                                             </ul>
                                         </nav>
                                     </div>
                                     <div className="flex justify-end md:flex-1">
-                                        <div className="pointer-events-auto"><button type="button"
+                                        {/* <div className="pointer-events-auto"><button type="button"
                                             aria-label="Toggle theme"
                                             className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"><svg
                                                 viewBox="0 0 24 24" strokeWidth="1.5" strokeLinecap="round"
@@ -86,7 +86,7 @@ const Header = () => {
                                                     d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
                                                     strokeWidth="1.5" strokeLinecap="round"
                                                     strokeLinejoin="round"></path>
-                                            </svg></button></div>
+                                            </svg></button></div> */}
                                     </div>
                                 </div>
                             </div>

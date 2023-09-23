@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Work from '../components/experience/Work';
 import codePic from '../../public/code.jpeg';
+import wanderPic from '../../public/wander.webp';
+import planePic from '../../public/plane.webp';
 import image1 from '../../public/image-1.webp';
 import image3 from '../../public/image-3.webp';
-import image4 from '../../public/image-4.webp';
 import profilePic from '../../public/me.png';
 
 if (typeof window !== "undefined") {
@@ -25,8 +26,8 @@ export default function Home() {
               <div className="top-[var(--avatar-top,theme(spacing.3))] w-full">
                 <div className="relative">
                   <a className="block h-16 w-16 origin-left pointer-events-auto" href="/">
-                    <Image alt="My Picture" src={profilePic}
-                      className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16" />
+                    {/* <Image alt="My Picture" src={profilePic}
+                      className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16" /> */}
                   </a>
                 </div>
               </div>
@@ -92,10 +93,13 @@ export default function Home() {
               <Image alt="desk" className="absolute inset-0 h-full w-full object-cover" src={image3} />
             </div>
             <div
-              className="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
-              <Image alt="nature" className="absolute inset-0 h-full w-full object-cover" src={image4} />
+              className="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
+              <Image alt="wander" className="absolute inset-0 h-full w-full object-cover" src={wanderPic} />
             </div>
-
+            <div
+              className="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
+              <Image alt="plane" className="absolute inset-0 h-full w-full object-cover" src={planePic} />
+            </div>
           </div>
         </div>
         <div className="sm:px-8 mt-24 md:mt-28">
@@ -104,7 +108,7 @@ export default function Home() {
               <div className="mx-auto max-w-2xl lg:max-w-5xl">
                 <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
                   <div className="flex flex-col gap-16">
-                    <article className="group relative flex flex-col items-start">
+                    {/* <article className="group relative flex flex-col items-start">
                       <h2
                         className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
                         <div
@@ -189,10 +193,10 @@ export default function Home() {
                           <path d="M6.75 5.75 9.25 8l-2.5 2.25" strokeWidth="1.5"
                             strokeLinecap="round" strokeLinejoin="round"></path>
                         </svg></div>
-                    </article>
+                    </article> */}
                   </div>
                   <div className="space-y-10 lg:pl-16 xl:pl-24">
-                    <form className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
+                    {/* <form className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
                       action="/thank-you">
                       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100"><svg
                         viewBox="0 0 24 24" fill="none" strokeWidth="1.5"
@@ -212,7 +216,7 @@ export default function Home() {
                         className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm" /><button
                           className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70 ml-4 flex-none"
                           type="submit">Join</button></div>
-                    </form>
+                    </form> */}
                     <Work />
                   </div>
                 </div>
