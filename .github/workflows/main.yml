@@ -29,5 +29,8 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
+          platforms: linux/arm64/v8
           push: true
-          tags: user/app:latest
+          tags: bishoyens/personal:latest
+          cache-from: type=registry,ref=bishoyens/personal:buildcache
+          cache-to: type=registry,ref=bishoyens/personal:buildcache,mode=max
