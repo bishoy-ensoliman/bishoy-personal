@@ -1,0 +1,42 @@
+name: ci deploy production
+
+concurrency:
+    group: production
+    cancel-in-progress: true
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: "Deploy to production"
+    environment: production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/prod.key
+          chmod 600 ~/.ssh/prod.key
+          cat >>~/.ssh/config <<END
+          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+          Host prod
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/prod.key
+            StrictHostKeyChecking yes
+          END
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+
+      - name: Check out the source
+        run: ssh prod 'cd projects/bishoy-personal && git pull && ./start.sh'
