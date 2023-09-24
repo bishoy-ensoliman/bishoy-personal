@@ -1,19 +1,10 @@
 import Image from 'next/image';
 import Work from '../components/experience/Work';
 import codePic from '../../public/code.jpeg';
-import wanderPic from '../../public/wander.webp';
-import planePic from '../../public/plane.webp';
+import wanderPic from '../../public/wander.jpg';
+import planePic from '../../public/plane.jpg';
 import image1 from '../../public/image-1.webp';
 import image3 from '../../public/image-3.webp';
-import profilePic from '../../public/me.png';
-
-if (typeof window !== "undefined") {
-  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
-}
 
 export default function Home() {
   return (
