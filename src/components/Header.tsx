@@ -6,7 +6,8 @@ import { useTheme } from "next-themes";
 
 const Header = () => {
     const { systemTheme, theme, setTheme } = useTheme();
-    const currentTheme = theme === 'system' ? systemTheme : theme;
+    const currentTheme = (theme === 'system' ? systemTheme : theme) || 'light';
+    setTheme(currentTheme);
 
     return (
         <header className="pointer-events-none relative z-50 flex flex-none flex-col">
