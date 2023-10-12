@@ -5,6 +5,7 @@ import wanderPic from '../../public/wander.jpg';
 import planePic from '../../public/plane.jpg';
 import image1 from '../../public/image-1.webp';
 import image3 from '../../public/image-3.webp';
+import Education from '@/components/education/Education';
 
 export default function Home() {
   return (
@@ -208,6 +209,7 @@ export default function Home() {
                           className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70 ml-4 flex-none"
                           type="submit">Join</button></div>
                     </form> */}
+                    <Education />
                     <Work />
                   </div>
                 </div>

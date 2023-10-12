@@ -30,7 +30,7 @@ const Work = () => {
                 <WorkElement companyName={'Pixelogic Media'} role={'Software Engineer'} from={'Jan 2019'} to={'Nov 2019'} imageSrc={pixelogicPic} city='Cairo, EG' />
                 <WorkElement companyName={'Bibliotheca Alexandrina'} role={'Junior Software Engineer'} from={'Sep 2017'} to={'Dec 2018'} imageSrc={baPic} city='Alexandria, EG' />
                 <WorkElement companyName={'Vetanoia - Part-time'} role={'Junior Software Engineer'} from={'Jan 2018'} to={'Dec 2018'} imageSrc={vitanoiaPic} city='Alexandria, EG' />
-                <WorkElement companyName={'Faculty of Engineering'} role={'Teaching Assistant'} from={'Sep 2017'} to={'Dec 2017'} imageSrc={foePic} city='Alexandria, EG' />
+                <WorkElement companyName={'Faculty of Engineering, Alexandria University'} role={'Teaching Assistant'} from={'Sep 2017'} to={'Dec 2017'} imageSrc={foePic} city='Alexandria, EG' />
                 <WorkElement companyName={'Petroleum Pipelines Company'} role={'Intern Control Systems Engineer'} from={'Jul 2016'} to={'Aug 2016'} imageSrc={ppcPic} city='Alexandria, EG' />
             </ol>
             <a className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 group mt-6 w-full"
