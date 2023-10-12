@@ -188,7 +188,7 @@ export default function Home() {
                     </article> */}
                   </div>
                   <div className="space-y-10 lg:pl-16 xl:pl-24">
-                    {/* <form className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
+                    <form className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
                       action="/thank-you">
                       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100"><svg
                         viewBox="0 0 24 24" fill="none" strokeWidth="1.5"
@@ -199,16 +199,27 @@ export default function Home() {
                           className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500">
                         </path>
                         <path d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-                          className="stroke-zinc-400 dark:stroke-zinc-500"></path>
-                      </svg><span className="ml-3">Stay up to date</span></h2>
-                      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">Get notified when I
+                          className="stroke-zinc-400 dark:stroke-zinc-500">
+                        </path>
+                      </svg>
+                        <span className="ml-3">Stay up to date</span>
+                      </h2>
+                      {/* <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">Get notified when I
                         publish something new, and unsubscribe at any time.</p>
                       <div className="mt-6 flex"><input type="email" placeholder="Email address"
                         aria-label="Email address" required
                         className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm" /><button
                           className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70 ml-4 flex-none"
-                          type="submit">Join</button></div>
-                    </form> */}
+                          type="submit">Join</button>
+                      </div> */}
+                      <a className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 group mt-6 w-full"
+                        href="/Bishoy_Soliman_CV.pdf" target='_blank'>Download CV
+                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"
+                          className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50">
+                          <path d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </a>
+                    </form>
                     <Education />
                     <Work />
                   </div>
