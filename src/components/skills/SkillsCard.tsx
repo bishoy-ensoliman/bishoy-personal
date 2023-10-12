@@ -21,7 +21,7 @@ export default function SkillsCard({ cardTile, elements }: SkillCardDetails) {
                 <span className="ml-3">{cardTile}</span>
             </h2>
             <ol className="mt-6 space-y-4 overflow-y-scroll max-h-64">
-                {elements.map((element) => <SkillsElement placeName={element.placeName}
+                {elements.map((element, i) => <SkillsElement key={i} placeName={element.placeName}
                     detail={element.detail} from={element.from} to={element.to} imageSrc={element.imageSrc} city={element.city} />)}
             </ol>
         </div>
