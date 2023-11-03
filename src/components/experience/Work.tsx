@@ -14,7 +14,7 @@ const workExperiences: Skill[] = [{
     placeName: 'Avi Medical',
     detail: 'Senior Software Engineer',
     from: 'Oct 2022',
-    to: 'Jan 2024',
+    to: 'Sep 2023',
     imageSrc: aviPic,
     city: 'Munich, DE'
 },

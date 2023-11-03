@@ -35,8 +35,7 @@ export default function MenuModal() {
                     <nav className="mt-6">
                         <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                             <li><a className="block py-2" href="/about">About</a></li>
-                            {/* <li><a className="block py-2" href="/articles">Articles</a></li>
-                            <li><a className="block py-2" href="/projects">Projects</a></li> */}
+                            <li><a className="block py-2" href="/projects">Projects</a></li>
                         </ul>
                     </nav>
                 </div>

@@ -1,9 +1,10 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
-import profilePic from '../../public/me.png';
+import profilePic from '../../../public/me.png';
 import { useTheme } from "next-themes";
-import MenuModal from './MenuModal';
+import MenuModal from '../MenuModal';
+import HeaderLink from './HeaderLink';
 
 const Header = () => {
     const { systemTheme, theme, setTheme } = useTheme();
@@ -32,19 +33,8 @@ const Header = () => {
                                         <nav className="pointer-events-auto hidden md:block">
                                             <ul
                                                 className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-                                                <li><a className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                                                    href="/about">About</a></li>
-                                                {/* <li><a className="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
-                                                    href="/articles">Articles
-                                                    <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0">
-                                                    </span>
-                                                </a></li> 
-                                                <li><a className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                                                    href="/projects">Projects</a></li>
-                                                  <li><a className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                                                    href="/cse">CSE</a></li>
-                                                <li><a className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                                                    href="/ase">ASE</a></li> */}
+                                                <HeaderLink name='About' link='/about' />
+                                                <HeaderLink name='Projects' link='/projects' />
                                             </ul>
                                         </nav>
                                     </div>
