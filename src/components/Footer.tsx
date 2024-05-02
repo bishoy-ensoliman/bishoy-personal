@@ -14,7 +14,7 @@ const Footer = () => {
                                         <a className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/cv">CV</a>
                                         <a className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/projects">Projects</a>
                                     </div>
-                                    <p className="text-sm text-zinc-400 dark:text-zinc-500">© {new Date().getFullYear()} Bishoy Soliman. All rights reserved.</p>
+                                    <p className="text-sm text-zinc-400 dark:text-zinc-500">© {(new Date().getFullYear())} Bishoy Soliman. All rights reserved.</p>
                                 </div>
                             </div>
                         </div>
