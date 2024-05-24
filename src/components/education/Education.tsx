@@ -1,10 +1,18 @@
 import React from 'react';
 import tumPic from '../../../public/tum.svg';
+import edinburgh from '../../../public/edinburgh_business_school_logo.jpeg';
 import foePic from '../../../public/foe.jpeg';
 import SkillsCard from '../skills/SkillsCard';
 import { Skill } from '../skills/SkillsElement';
 
 const education: Skill[] = [{
+    placeName: 'Edinburgh Business School, Heriot-Watt University',
+    detail: 'MBA - Master of Business Administration',
+    from: 'May 2024',
+    to: 'PRESENT',
+    imageSrc: edinburgh,
+    city: 'Edinburgh, Scotland'
+}, {
     placeName: 'TUM',
     detail: 'B.Sc. Aerospace Engineering',
     from: 'Oct 2023',
