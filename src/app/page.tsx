@@ -34,10 +34,12 @@ export default function Home() {
               <div className="mx-auto max-w-2xl lg:max-w-5xl">
                 <div className="max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                    Computer & Systems Engineer, Project Manager, and studying Aerospace.</h1>
+                    MBA & Computer & Systems & Aerospace Engineer.
+                  </h1>
                   <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                     I’m Bishoy, a Senior Software Engineer based in Munich. I am studying Aerospace Engineering
-                    and looking forward to combine both passions to create innovative and impactful solutions for the world..
+                    and looking forward to combine both passions to create innovative and impactful solutions for
+                    the world using the knowledge I gained from my MBA studies..
                   </p>
                   <div className="mt-6 flex gap-6">
                     <a className="group -m-1 p-1" target='_blank' href="https://www.instagram.com/bishoy.ensoliman/">

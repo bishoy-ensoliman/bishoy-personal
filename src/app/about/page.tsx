@@ -32,7 +32,7 @@ export default function About() {
                                             such as Vue.js, React, Angular, Spring-boot, Quarkus, and Django.
                                             I am always eager to learn new skills and challenge myself,
                                             which is why I am pursuing a B.Sc. in Aerospace Engineering
-                                            from Technical University of Munich.</p>
+                                            from Technical University of Munich and an MBA from Heriot-Watt University.</p>
                                     </div>
                                 </div>
                                 <div className="lg:pl-20">
