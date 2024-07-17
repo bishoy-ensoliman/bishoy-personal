@@ -6,13 +6,14 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: public
     nginx.ingress.kubernetes.io/rewrite-target: /
+    cert-manager.io/cluster-issuer: "letsencrypt"
 spec:
   tls:
   - hosts:
-    - www.bishoysoliman.com
     - bishoysoliman.com
-    secretName: letsencrypt-account-key
+    secretName: tls-secret
   rules:
+  - host: bishoysoliman.com
     http:
       paths:
       - path: /
