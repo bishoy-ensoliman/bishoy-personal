@@ -7,13 +7,14 @@ metadata:
     kubernetes.io/ingress.class: public
     nginx.ingress.kubernetes.io/rewrite-target: /
     cert-manager.io/cluster-issuer: "letsencrypt"
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
 spec:
   tls:
   - hosts:
-    - bishoysoliman.com
+    - www.bishoysoliman.com
     secretName: tls-secret
   rules:
-  - host: bishoysoliman.com
+  - host: www.bishoysoliman.com
     http:
       paths:
       - path: /
