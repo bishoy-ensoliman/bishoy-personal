@@ -4,6 +4,7 @@ import carSimPic from '../../../public/car_sim.jpg';
 import rcCarPic from '../../../public/rcCar.jpg';
 import flightSimPic from '../../../public/car_sim.jpg';
 import tvPic from '../../../public/car_sim.jpg';
+import acPic from '../../../public/car_sim.jpg';
 import selfBalRobPic from '../../../public/car_sim.jpg';
 
 export default function Projects() {
@@ -26,6 +27,7 @@ export default function Projects() {
                                     <ProjectOverviewCard title='Flight Sim' imageSrc={flightSimPic} description='Creating a flight simulator based on MSFS, Xplane & G1000.' link='#' linkLabel='comming soon...' />
                                     <ProjectOverviewCard title='Self-balancing robot' imageSrc={selfBalRobPic} description='Implementing self balancing robot using classical and modern control theories.' link='#' linkLabel='comming soon...' />
                                     <ProjectOverviewCard title='DIY TV' imageSrc={tvPic} description='Creating a smart TV from a screen of a non functioning laptop & chromcast' link='#' linkLabel='comming soon...' />
+                                    <ProjectOverviewCard title='DIY A/C' imageSrc={acPic} description='Creating an Air Conditioner from 5 peltier modules' link='#' linkLabel='comming soon...' />
                                 </ul>
                             </div>
                         </div>
