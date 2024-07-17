@@ -4,8 +4,7 @@ metadata:
   name: bishoysoliman-ingress
   namespace: bishoy-personalsite
   annotations:
-    spec.ingressClassName: "nginx"
-    nginx.ingress.kubernetes.io/client_body_timeout: "60s"
+    kubernetes.io/ingress.class: public
 spec:
   tls:
   - hosts:
