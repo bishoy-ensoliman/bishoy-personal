@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: personalsite
+  namespace: bishoy-personalsite
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: personalsite
+  template:
+    metadata:
+      labels:
+        service: personalsite
+    spec:
+      containers:
+        - image: localhost:32000/personal-site:latest
+          name: personalsite
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+              protocol: TCP
+      restartPolicy: Always

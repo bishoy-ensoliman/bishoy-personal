@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bishoysoliman-ingress
+  namespace: bishoy-personalsite
+  annotations:
+    spec.ingressClassName: "nginx"
+    nginx.ingress.kubernetes.io/client_body_timeout: "60s"
+spec:
+  tls:
+  - hosts:
+    - bishoysoliman.com
+    secretName: server-tls
+  rules:
+  - host: bishoysoliman.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: personalsite
+            port: 
+              number: 3000
