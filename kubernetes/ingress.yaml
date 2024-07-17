@@ -5,13 +5,14 @@ metadata:
   namespace: bishoy-personalsite
   annotations:
     kubernetes.io/ingress.class: public
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   tls:
   - hosts:
+    - www.bishoysoliman.com
     - bishoysoliman.com
-    secretName: server-tls
+    secretName: letsencrypt-account-key
   rules:
-  - host: bishoysoliman.com
     http:
       paths:
       - path: /
