@@ -13,7 +13,7 @@ const education: Skill[] = [{
     imageSrc: edinburgh,
     city: 'Edinburgh, Scotland'
 }, {
-    placeName: 'TUM',
+    placeName: 'Technische Universität München',
     detail: 'B.Sc. Aerospace Engineering',
     from: 'Oct 2023',
     to: 'PRESENT',
