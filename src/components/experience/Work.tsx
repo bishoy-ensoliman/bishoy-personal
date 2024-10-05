@@ -8,10 +8,19 @@ import pixelogicPic from '../../../public/pixelogic.jpeg';
 import ppcPic from '../../../public/ppc.jpeg';
 import vitanoiaPic from '../../../public/vitanoia.jpeg';
 import arnellPic from '../../../public/arnell.jpeg';
+import traclandPic from '../../../public/tracland.jpg';
 import { Skill } from '../skills/SkillsElement';
 import SkillsCard from '../skills/SkillsCard';
 
 const workExperiences: Skill[] = [
+    {
+        placeName: 'Tracland',
+        detail: 'Mechanical Engineer (Intern)',
+        from: 'Aug 2024',
+        to: 'Oct 2024',
+        imageSrc: traclandPic,
+        city: 'Alexandria, EG'
+    },
     {
         placeName: 'Arnell',
         detail: 'Software Engineer (Student)',
