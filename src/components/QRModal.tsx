@@ -31,7 +31,7 @@ export default function QRModal() {
                     </div>
                     <div className="mt-6">
                         <div className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                            <Image alt="My Picture" src={qrCode} className="max-w-20" />
+                            <Image alt="My Picture" src={qrCode} />
                         </div>
                     </div>
                 </div>
