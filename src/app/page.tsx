@@ -6,6 +6,7 @@ import planePic from '../../public/plane.jpg';
 import image1 from '../../public/image-1.webp';
 import image3 from '../../public/image-3.webp';
 import Education from '@/components/education/Education';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -17,10 +18,10 @@ export default function Home() {
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
               <div className="top-[var(--avatar-top,theme(spacing.3))] w-full">
                 <div className="relative">
-                  <a className="block h-16 w-16 origin-left pointer-events-auto" href="/">
+                  <Link className="block h-16 w-16 origin-left pointer-events-auto" href="/">
                     {/* <Image alt="My Picture" src={profilePic}
                       className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16" /> */}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
