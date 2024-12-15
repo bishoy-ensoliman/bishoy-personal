@@ -9,10 +9,19 @@ import ppcPic from '../../../public/ppc.jpeg';
 import vitanoiaPic from '../../../public/vitanoia.jpeg';
 import arnellPic from '../../../public/arnell.jpeg';
 import traclandPic from '../../../public/tracland.jpg';
+import ercPic from '../../../public/erc_system_logo.jpeg';
 import { Skill } from '../skills/SkillsElement';
 import SkillsCard from '../skills/SkillsCard';
 
 const workExperiences: Skill[] = [
+    {
+        placeName: 'eRC System',
+        detail: 'Aerospace Data Science Engineer',
+        from: 'Jan 2025',
+        to: 'Present',
+        imageSrc: ercPic,
+        city: 'Munich, DE'
+    },
     {
         placeName: 'Tracland',
         detail: 'Mechanical Engineer (Intern)',
@@ -25,7 +34,7 @@ const workExperiences: Skill[] = [
         placeName: 'Arnell',
         detail: 'Software Engineer (Student)',
         from: 'Jun 2024',
-        to: 'Present',
+        to: 'Jul 2024',
         imageSrc: arnellPic,
         city: 'Munich, DE'
     },
