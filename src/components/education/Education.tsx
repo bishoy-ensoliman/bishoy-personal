@@ -5,14 +5,24 @@ import foePic from '../../../public/foe.jpeg';
 import SkillsCard from '../skills/SkillsCard';
 import { Skill } from '../skills/SkillsElement';
 
-const education: Skill[] = [{
+const education: Skill[] = [
+{
+    placeName: 'Technische Universität München',
+    detail: 'M.Sc. Microelectronics and Chip Design',
+    from: 'Oct 2025',
+    to: 'PRESENT',
+    imageSrc: tumPic,
+    city: 'Munich, DE'
+},
+{
     placeName: 'Edinburgh Business School, Heriot-Watt University',
     detail: 'MBA - Master of Business Administration',
     from: 'May 2024',
     to: 'PRESENT',
     imageSrc: edinburgh,
     city: 'Edinburgh, Scotland'
-}, {
+},
+{
     placeName: 'Technische Universität München',
     detail: 'B.Sc. Aerospace Engineering',
     from: 'Oct 2023',
