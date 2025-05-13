@@ -20,19 +20,13 @@ export default function About() {
                                     <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">I’m Bishoy Soliman. I live in Munich, where I design the future.</h1>
                                     <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                                         <p>
-                                            I am a Full-stack Developer working to ensure the quality, security, and performance of software products.
+                                            I am a multi-disciplinary Engineer working to ensure the quality, security, and performance of various products.
                                         </p>
                                         <p>
-                                            I have a strong background in <span className='font-bold'>Computer & Systems Engineering</span>, with a
-                                            <span className='font-bold'> B.Sc.</span> and <span className='font-bold'>M.Sc. </span>coursework.
+                                            I have worked in various industries, such as aerospace, sports, movies, fitness, transportation,
+                                            and health, using different technologies.
+                                            I am always eager to learn new skills and challenge myself.
                                         </p>
-                                        <p>
-                                            I have also worked in various industries, such as sports, movies, fitness, transportation,
-                                            and health, using different technologies and frameworks,
-                                            such as Vue.js, React, Angular, Spring-boot, Quarkus, and Django.
-                                            I am always eager to learn new skills and challenge myself,
-                                            which is why I am pursuing a B.Sc. in Aerospace Engineering
-                                            from Technical University of Munich and an MBA from Heriot-Watt University.</p>
                                     </div>
                                 </div>
                                 <div className="lg:pl-20">
