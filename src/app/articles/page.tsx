@@ -8,7 +8,7 @@ export default function Articles() {
                     <div className="relative px-4 sm:px-8 lg:px-12">
                         <div className="mx-auto max-w-2xl lg:max-w-5xl">
                             <header className="max-w-2xl">
-                                <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">Writing on software design, company building, and the aerospace industry.</h1>
+                                <h1 className="text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl">Writing on software design, company building, and the aerospace industry.</h1>
                                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.</p>
                             </header>
                             <div className="mt-16 sm:mt-20">

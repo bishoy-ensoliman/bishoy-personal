@@ -15,7 +15,7 @@ export default function Projects() {
                     <div className="relative px-4 sm:px-8 lg:px-12">
                         <div className="mx-auto max-w-2xl lg:max-w-5xl">
                             <header className="max-w-2xl">
-                                <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">Things I’ve enjoyed Creating.</h1>
+                                <h1 className="text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl">Things I’ve enjoyed Creating.</h1>
                                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                                     I’ve worked on lots of little projects over the years. Most of them are just for fun, but some of them are actually useful. Here are a few of my favorites.
                                 </p>
