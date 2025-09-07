@@ -63,7 +63,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-16 sm:mt-20 flex justify-center">
-          <div className="flex gap-5 overflow-y-scroll py-4 sm:gap-8">
+          <div className="flex gap-5 overflow-x-scroll overflow-y-hidden py-4 sm:gap-8 px-4">
             <div
               className="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
               <Image alt="coding" className="absolute inset-0 h-full w-full object-cover" src={codePic} />
