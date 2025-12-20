@@ -5,8 +5,8 @@ import Header from '../components/header/Header';
 import NextThemeProvider from '../providers/NextThemeProvider';
 
 export const metadata: Metadata = {
-  title: 'Bishoy Isaak',
-  description: 'Personal Profile of Bishoy Isaak',
+  title: 'Bischoy Isaak',
+  description: 'Personal Profile of Bischoy Isaak',
 }
 
 export default function RootLayout({
