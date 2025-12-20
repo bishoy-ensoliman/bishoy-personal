@@ -16,7 +16,7 @@ import SkillsCard from '../skills/SkillsCard';
 const workExperiences: Skill[] = [
     {
         placeName: 'eRC System',
-        detail: 'Aerospace Data Science Engineer',
+        detail: 'Flight Test Engineer (Working Student)',
         from: 'Jan 2025',
         to: 'Present',
         imageSrc: ercPic,

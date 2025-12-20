@@ -36,17 +36,13 @@ export default function Home() {
                   <h1 className="text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl">
                     <ul>
                       <li>MBA</li>
-                      <li>Aerospace Engineer M.Sc.</li>
+                      <li>Aerospace Engineer B.Sc.</li>
                       <li>Microelectronics & Chip Designer M.Sc.</li>
                       <li>Computer & Systems Engineer B.Sc.</li>
                     </ul>
-                    <ul>
-                      <li>Senior Software Engineer</li>
-                      <li>Project Manager</li>
-                    </ul>
                   </h1>
                   <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                    I’m Bishoy, an enthusiastic Engineer based in Munich. 
+                    I’m Bischoy, an enthusiastic Engineer based in Munich. 
                     Looking forward to combine multiple passions to create innovative and impactful solutions for
                     the world..
                   </p>
