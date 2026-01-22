@@ -5,7 +5,7 @@ import Image from 'next/image';
 export interface ProjectDetails {
     title: string;
     description: string;
-    imageSrc: any;
+    imageSrc: any[];
 };
 
 export default function ProjectOverviewCard({ title, description, imageSrc }: ProjectDetails) {
@@ -16,7 +16,7 @@ export default function ProjectOverviewCard({ title, description, imageSrc }: Pr
                 <div
                     className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
                 >
-                    <Image alt={title} className="rounded-2xl h-10 w-10" src={imageSrc} />
+                    <Image alt={title} className="rounded-2xl h-10 w-10" src={imageSrc[0]} />
                 </div>
                 <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                     <div
@@ -52,24 +52,14 @@ export default function ProjectOverviewCard({ title, description, imageSrc }: Pr
                                 <div className="relative p-6 flex-auto">
                                     <div className="grid gap-4">
                                         <div>
-                                            <Image className="h-auto w-full max-w-full rounded-lg object-cover object-center" alt={title} src={imageSrc} />
+                                            <Image className="h-auto w-full max-w-full rounded-lg object-cover object-center" alt={title} src={imageSrc[0]} />
                                         </div>
                                         <div className="grid grid-cols-5 gap-4">
-                                            <div>
-                                                <Image className="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt={title} src={imageSrc} />
-                                            </div>
-                                            <div>
-                                                <Image className="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt={title} src={imageSrc} />
-                                            </div>
-                                            <div>
-                                                <Image className="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt={title} src={imageSrc} />
-                                            </div>
-                                            <div>
-                                                <Image className="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt={title} src={imageSrc} />
-                                            </div>
-                                            <div>
-                                                <Image className="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt={title} src={imageSrc} />
-                                            </div>
+                                            {imageSrc.slice(1).map((src, index) => (
+                                                <div key={index}>
+                                                    <Image className="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer" alt={title} src={src} />
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
                                     <p className="my-4 text-blueGray-500 text-xl leading-relaxed">
