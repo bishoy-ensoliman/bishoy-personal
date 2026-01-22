@@ -26,7 +26,6 @@ export default function Projects() {
                                     <ProjectOverviewCard title='esp32 based RC car' imageSrc={rcCarPic} description='converting a model RC car to a smart self-driving or remotely controlled car.' />
                                     <ProjectOverviewCard title='Flight Sim' imageSrc={flightSimPic} description='Creating a flight simulator based on MSFS, Xplane & G1000.' />
                                     <ProjectOverviewCard title='Self-balancing robot' imageSrc={selfBalRobPic} description='Implementing self balancing robot using classical and modern control theories.' />
-                                    <ProjectOverviewCard title='DIY TV' imageSrc={tvPic} description='Creating a smart TV from a screen of a non functioning laptop & chromcast' />
                                     <ProjectOverviewCard title='DIY A/C' imageSrc={acPic} description='Creating an Air Conditioner from 5 peltier modules' />
                                 </ul>
                             </div>
