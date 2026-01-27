@@ -70,13 +70,12 @@ const Header = () => {
                                                 </svg>
                                             </button>
                                         </div>
+
+                                        <LanguageSwitcher />
                                         
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="flex justify-end md:flex-1">
-                            <LanguageSwitcher />
                         </div>
                     </div>
                 </div>
