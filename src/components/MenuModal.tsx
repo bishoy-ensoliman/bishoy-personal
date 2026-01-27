@@ -1,5 +1,6 @@
 'use client';
 import * as React from 'react';
+import Link from 'next/link';
 
 export default function MenuModal() {
     const [open, setOpen] = React.useState(false);
@@ -34,9 +35,9 @@ export default function MenuModal() {
                     </div>
                     <nav className="mt-6">
                         <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                            <li><a className="block py-2" href="/about">About</a></li>
-                            <li><a className="block py-2" href="/cv">CV</a></li>
-                            <li><a className="block py-2" href="/projects">Projects</a></li>
+                            <li><Link className="block py-2" href="/about">About</Link></li>
+                            <li><Link className="block py-2" href="/cv">CV</Link></li>
+                            <li><Link className="block py-2" href="/projects">Projects</Link></li>
                         </ul>
                     </nav>
                 </div>
