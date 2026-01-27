@@ -1,13 +1,28 @@
 import Image from 'next/image';
-import Work from '../components/experience/Work';
-import codePic from '../../public/code.jpeg';
-import chipPic from '../../public/chip.webp';
-import planePic from '../../public/plane.jpg';
-import image3 from '../../public/image-3.webp';
+import Work from '../../components/experience/Work';
+import codePic from '../../../public/code.jpeg';
+import chipPic from '../../../public/chip.webp';
+import planePic from '../../../public/plane.jpg';
+import image3 from '../../../public/image-3.webp';
 import Education from '@/components/education/Education';
 import Link from 'next/link';
+import { getDictionary } from './dictionaries';
 
-export default function Home() {
+interface PageProps {
+  params: Promise<{ lng: string }>;
+}
+
+interface Dictionary {
+  [key: string]: any;
+}
+
+
+
+
+export default async function Home({ params }: PageProps) {
+  const { lng } = await params;
+  const dict: Dictionary = await getDictionary(lng);
+
   return (
     <div>
       <div className="order-last mt-[calc(theme(spacing.16)-theme(spacing.3))]"></div>
@@ -33,13 +48,13 @@ export default function Home() {
             <div className="relative px-4 sm:px-8 lg:px-12">
               <div className="mx-auto max-w-2xl lg:max-w-5xl">
                 <div className="max-w-2xl">
+
+                  
                   <h1 className="text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl">
-                    Aerospace Engineer | MBA <br /> Microelectronics & Chip Designer | Computer & Systems Engineer
+                    {dict.headline}
                   </h1>
                   <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                    I’m Bischoy, an enthusiastic Engineer based in Munich. 
-                    Looking forward to combine multiple passions to create innovative and impactful solutions for
-                    the world..
+                    {dict.about}
                   </p>
                   <div className="mt-6 flex gap-6">
                     <a className="group -m-1 p-1" target='_blank' href="https://github.com/bishoy-ensoliman">

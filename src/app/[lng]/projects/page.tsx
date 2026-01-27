@@ -1,11 +1,10 @@
 import React from 'react';
 import ProjectOverviewCard from '@/components/projects/ProjectOverviewCard';
-import carSimPic from '../../../public/car_sim.jpg';
-import rcCarPic from '../../../public/rcCar.jpg';
-import flightSimPic from '../../../public/car_sim.jpg';
-import tvPic from '../../../public/car_sim.jpg';
-import acPic from '../../../public/car_sim.jpg';
-import selfBalRobPic from '../../../public/car_sim.jpg';
+import carSimPic from '../../../../public/car_sim.jpg';
+import rcCarPic from '../../../../public/rcCar.jpg';
+import flightSimPic from '../../../../public/car_sim.jpg';
+import acPic from '../../../../public/car_sim.jpg';
+import selfBalRobPic from '../../../../public/car_sim.jpg';
 
 export default function Projects() {
     return (
