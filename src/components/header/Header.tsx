@@ -6,8 +6,8 @@ import { useTheme } from "next-themes";
 import MenuModal from '../MenuModal';
 import HeaderLink from './HeaderLink';
 import QRModal from '../QRModal';
-import Link from 'next/link';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import LocalizedLink from '../LocalizedLink';
 
 const Header = () => {
     const { systemTheme, theme, setTheme } = useTheme();
@@ -28,10 +28,10 @@ const Header = () => {
                                 <div className="relative flex gap-4">
                                     <div className="flex flex-1">
                                         <div className="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
-                                            <Link className="pointer-events-auto" href="/">
+                                            <LocalizedLink className="pointer-events-auto" href="/">
                                                 <Image alt="My Picture" src={profilePic}
                                                     className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-9 w-9" />
-                                            </Link>
+                                            </LocalizedLink>
                                         </div>
                                     </div>
 
