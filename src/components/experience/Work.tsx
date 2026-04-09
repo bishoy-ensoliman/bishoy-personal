@@ -18,7 +18,7 @@ const workExperiences: Skill[] = [
         placeName: 'eRC System',
         detail: 'Flight Test Instrumentation Engineer (Working Student)',
         from: 'Jan 2025',
-        to: 'Present',
+        to: 'Apr 2026',
         imageSrc: ercPic,
         city: 'Munich, DE'
     },

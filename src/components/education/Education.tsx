@@ -8,6 +8,14 @@ import { Skill } from '../skills/SkillsElement';
 const education: Skill[] = [
 {
     placeName: 'Technische Universität München',
+    detail: 'M.Sc. Aerospace Engineering',
+    from: 'Oct 2026',
+    to: 'PRESENT',
+    imageSrc: tumPic,
+    city: 'Munich, DE'
+},
+{
+    placeName: 'Technische Universität München',
     detail: 'M.Sc. Microelectronics and Chip Design',
     from: 'Oct 2025',
     to: 'PRESENT',
