@@ -25,6 +25,7 @@ export default async function RootLayout({
     <html lang={lng} dir={direction}>
       <head>
         <link rel="icon" type="image/png" sizes="any" href="/favicon-32x32.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Montserrat:wght@200;400&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
       </head>
       <body className={lng === 'ar' ? 'font-arabic flex h-full bg-zinc-50 dark:bg-black' : 'font-sans flex h-full bg-zinc-50 dark:bg-black'}>
         <NextThemeProvider>
